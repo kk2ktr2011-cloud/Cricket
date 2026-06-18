@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(65, 103, 136);
+  color: black;
+  padding: 15px 30px;
+}
