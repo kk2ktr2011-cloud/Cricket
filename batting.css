@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background-color: rgb(220, 235, 190);
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(45, 125, 210);
+  padding: 15px 30px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  margin: 0;
+  color: rgb(8, 23, 112);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: rgb(8, 23, 112);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 220, 100);
+}
+
+.footer {
+  text-align: center;
+  background: rgb(45, 125, 210);
+  color: rgb(8, 23, 112);
+  padding: 20px;
+  margin-top: auto;
+}
