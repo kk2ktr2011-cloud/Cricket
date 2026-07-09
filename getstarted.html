@@ -3,65 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cricket</title>
+  <title>Cricket | Get Started</title>
   <link rel="stylesheet" href="getstarted.css"/>
 </head>
 
 <body>
-   <container class="container">
+  <div class="container">
+
     <nav class="navbar">
-        <h2 class="logo">
-            Cricket 
-        </h2>
+      <h2 class="logo">Cricket</h2>
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="batting.html">Batting</a>
-            <a href="bowling.html">Bowling</a>
-            <a href="fielding.html">Fielding</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="getstarted.html"class='active'>Get Started</a>
-        </div>
-  </nav>
-  <div class="hero">
-    <img src="Images/cfphotosin-photography-HJbv998de9s-unsplash.jpg" class="hero-image">
-    <div class="overlay">
-      <h1>
-        Get Started
-      </h1>
-    </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="batting.html">Batting</a>
+        <a href="bowling.html">Bowling</a>
+        <a href="fielding.html">Fielding</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="getstarted.html" class="active">Get Started</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <img
+        src="Images/cfphotosin-photography-HJbv998de9s-unsplash.jpg"
+        alt="Cricket players on a field"
+        class="hero-image"
+      >
+
+      <div class="overlay">
+        <h1>Get Started</h1>
+        <p>Everything you need to begin learning cricket fundamentals.</p>
+      </div>
+    </section>
+
+    <section id="Content" class="section">
+      <h2>What is Inside?</h2>
+
+      <p>
+        This website contains beginner-friendly tutorials covering the fundamentals
+        of cricket. You'll find lessons on batting, bowling, and fielding, along
+        with videos where they help explain techniques more clearly. The fielding
+        section focuses on catching drills and practice exercises. These lessons
+        are based on my own experience and understanding of the game, so some
+        techniques may vary depending on coaching styles.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>The Topics</h2>
+
+      <div class="card-container">
+        <a href="batting.html" class="card">
+          <h3>Batting</h3>
+          <p>Learn grip, stance, shots, and batting fundamentals.</p>
+        </a>
+
+        <a href="bowling.html" class="card">
+          <h3>Bowling</h3>
+          <p>Develop your bowling action, accuracy, and consistency.</p>
+        </a>
+
+        <a href="fielding.html" class="card">
+          <h3>Fielding</h3>
+          <p>Practice catching, throwing, and movement drills.</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© Cricket | Built during Choicest Fruit SYEP Internship</p>
+    </footer>
+
+    <script src="getstarted.js"></script>
+
   </div>
-  <section id = "Content" class="section">
-    <h2>
-      What is Inside?
-    </h2>
-
-    <p>
-      This website will contain simple tutorials for a variety of things within Cricket. I will give a short explanation for each topic. Also, fielding will only contain tips for catching practice or maybe a few running exercises. Batting and bowling will be using videos as well to make it easier to tell what to do. All of these lessons are of what I think is needed to do, so it might be ocassionally incorrect.
-    </p>
-  </section>
-
-  <section id = "skills" class="section">
-    <h2>
-      The Topics
-    </h2>
-
-    <div class="card-container">
-      <a href="batting.html" class = "card">
-        Batting
-      </a>
-      <a href="bowling.html" class = "card">
-        Bowling
-      </a>
-      <a href="fielding.html" class = "card">
-        Fielding
-      </a>
-    </div>
-  </section>
-   <footer class="footer">
-    <p>© Cricket | Built during Choicest Fruit SYEP Internship</p>
-  </footer>
-
-  <script src="getstarted.js"></script>
-  </container>
 </body>
+</html>

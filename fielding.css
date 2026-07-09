@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: Verdana, sans-serif;
+  font-family: Inter, system-ui, sans-serif;
   background-color: rgb(220, 235, 190);
   color: #222;
   background: linear-gradient(

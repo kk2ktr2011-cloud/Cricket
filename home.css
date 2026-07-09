@@ -1,32 +1,41 @@
+html{
+
+scroll-behavior:smooth;
+
+}
+
 body {
   margin: 0;
-  font-family: Verdana, sans-serif;
-  background-color: rgb(220, 235, 190);
-  color: #222;
+  font-family: Inter, system-ui, sans-serif;
+  background-color: #F8FAFC;
+  color: #1F2937;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(45, 125, 210);
   padding: 20px 40px;
 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: #1565C0;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
 }
 
 .logo {
   margin: 0;
-  color: rgb(8, 23, 112);
+  color: white;
+  font-size:2rem;
+  font-weight:700;
+  letter-spacing:.5px;
 }
 
 .nav-links {
   display: flex;
-  gap: 5px;
+  gap: 12px;
 }
 
 .nav-links a {
-  color: rgb(8, 23, 112);
+  color:white;
   text-decoration: none;
   padding: 8px 14px;
   border-radius: 999px;
@@ -34,12 +43,12 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,.15);
 }
 
 .nav-links a.active {
-  background-color: rgb(255, 220, 100);
-  color: rgb(8, 23, 112);
+  background: #FFC107;
+  color: #1F2937;
   font-weight: 600;
 }
 
@@ -62,13 +71,37 @@ body {
 
 .card,
 .project-card {
-  background: rgb(243 93 1);
-  padding: 25px;
-  width: 220px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px gray;
-  align-items: center;
+  background: white;
+  width: 260px;
+  padding: 28px;
+
+  border-radius: 16px;
+
+  border-top: 5px solid #1565C0;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+
   text-align: center;
+
+  transition: transform .25s ease,
+              box-shadow .25s ease;
+}
+
+.card:hover,
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,.12);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #1F2937;
+}
+
+.card p {
+  color: #4B5563;
+  line-height: 1.6;
 }
 
 .text-card {
@@ -82,9 +115,9 @@ body {
 
 .footer {
   text-align: center;
-  background: rgb(45, 125, 210);
-  color: rgb(8, 23, 112);
-  padding: 20px;
+  background: #1565C0;
+  color: rgb(255, 255, 255);
+  padding: 30px;
   margin-top: auto;
 }
 
