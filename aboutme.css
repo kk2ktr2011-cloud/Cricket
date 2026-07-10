@@ -5,13 +5,8 @@
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  background-color: rgb(220, 235, 190);
-  color: #222;
-  background: linear-gradient(
-    to bottom,
-    rgb(220, 235, 190),
-    rgb(205, 225, 170)
-  );
+  background-color: #EDF5FD;
+  color: #1F2937;
   overflow-x: hidden;
 }
 
@@ -19,25 +14,27 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background: rgb(45, 125, 210);
   padding: 20px 40px;
 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: #1565C0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
   margin: 0;
-  color: rgb(8, 23, 112);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .nav-links {
   display: flex;
-  gap: 5px;
+  gap: 12px;
 }
 
 .nav-links a {
-  color: rgb(8, 23, 112);
+  color: white;
   text-decoration: none;
   padding: 8px 14px;
   border-radius: 999px;
@@ -45,21 +42,13 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .nav-links a.active {
-  background-color: rgb(255, 220, 100);
-  color: rgb(8, 23, 112);
+  background: #FFC107;
+  color: #1F2937;
   font-weight: 600;
-}
-
-.footer {
-  text-align: center;
-  background: rgb(45, 125, 210);
-  color: rgb(8, 23, 112);
-  padding: 20px;
-  margin-top: -350px;
 }
 
 .section {
@@ -67,10 +56,11 @@ body {
   margin: 80px auto;
   padding: 40px;
 
-  background: white;
+  background: #F5F7FA;
+  border-top: 5px solid #1565C0;
   border-radius: 16px;
 
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .section + .section {
@@ -86,47 +76,63 @@ body {
 
 .card,
 .project-card {
-  border-top: 6px solid rgb(20, 60, 140);
-  background: rgb(255, 248, 230);
-  padding: 30px;
   width: 250px;
+  padding: 30px;
 
+  background: white;
+  border-top: 5px solid #1565C0;
   border-radius: 16px;
 
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 
   text-align: center;
-
-  transition: transform 0.3s ease,
-  box-shadow 0.3s ease;
   text-decoration: none;
+
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
 }
 
-.card:hover {
-  transform: translateY(-8px);
+.card:hover,
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
 
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+.card h3,
+.project-card h3 {
+  color: #1F2937;
+  margin-top: 0;
+}
 
-  color: rgb(255, 220, 100);
+.card p,
+.project-card p {
+  color: #4B5563;
+  line-height: 1.6;
 }
 
 img {
   max-width: 30%;
   height: auto;
-
   padding: 3%;
+  border-radius: 12px;
 }
 
-.hero-image {
+.hero {
+  position: relative;
   width: 100%;
+}
+
+.about-container .hero-image {
+  width: 45%;
+  max-width: 500px;
   height: auto;
+
   object-fit: cover;
-  object-position: center 50%;
-  border-radius: 20%;
+  border-radius: 16px;
 }
 
 .overlay {
-position: absolute;
+  position: absolute;
   inset: 0;
 
   display: flex;
@@ -134,15 +140,11 @@ position: absolute;
   align-items: center;
 
   color: white;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
 }
 
 .hero::after {
@@ -153,17 +155,43 @@ position: absolute;
   width: 100%;
   height: 80px;
 
-  background: linear-gradient(to bottom, transparent, rgb(220, 235, 190));
+  background: linear-gradient(to bottom, transparent, #EDF5FD);
 }
 
 #skills {
-  background-color: rgb(190, 220, 160);
+  background: #F5F7FA;
 }
 
 .aboutme {
-    translate: 55%;
-    transform: translateY(-160%);
-    text-align: center;
-    width: 60%;
+  width: 45%;
+  padding: 30px;
+
+  background: #F5F7FA;
+  border-top: 5px solid #1565C0;
+  border-radius: 16px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+  text-align: center;
+  color: #4B5563;
+  line-height: 1.6;
 }
 
+.footer {
+  text-align: center;
+  background: #1565C0;
+  color: white;
+  padding: 30px;
+  margin-top: auto;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px;
+}
