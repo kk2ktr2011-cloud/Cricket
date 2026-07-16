@@ -244,3 +244,62 @@ img {
 
   margin-top: auto;
 }
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .overlay {
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    padding: 0 20px;
+  }
+
+  .tips1 {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .tips1 h1 {
+    font-size: 1.8rem;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  img {
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .footer {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+}

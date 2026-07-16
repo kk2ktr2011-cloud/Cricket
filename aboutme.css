@@ -195,3 +195,88 @@ img {
   margin: 80px auto;
   padding: 40px;
 }
+
+/* ==========================
+   Mobile (768px and below)
+========================== */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .overlay {
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .section {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card,
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .about-container .hero-image,
+  .aboutme {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+}
