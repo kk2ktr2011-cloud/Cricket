@@ -126,6 +126,19 @@ li {
   min-height: 100vh;
 }
 
+.video {
+  max-width: 100%;
+  align-items: center;
+}
+
+.hero-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* Mobile (768px and below) */
 @media (max-width: 768px) {
 
