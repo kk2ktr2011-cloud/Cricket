@@ -1,21 +1,21 @@
 # Cricket Teacher
 
-A website built to teach people how to play my favorite sport, Cricket!
+A website built to teach people how to play my favorite sport, Cricket! <br>
 
-Features:
-Batting
-Bowling
-Fielding
+Features: <br>
+Batting <br>
+Bowling <br>
+Fielding <br>
 
-Technologies Used:
-VS Code
-ChatGPT
-Unsplash
-Git
-GitHub
+Technologies Used: <br>
+VS Code <br>
+ChatGPT <br>
+Unsplash <br>
+Git <br>
+GitHub <br>
 
-Photo Credits:
-Zoshua Colah
-John Oswald
-CF Photosin Photography
-Sports Maidan
+Photo Credits: <br>
+Zoshua Colah <br>
+John Oswald <br>
+CF Photosin Photography <br>
+Sports Maidan <br>
