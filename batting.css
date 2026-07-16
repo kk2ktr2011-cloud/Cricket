@@ -135,6 +135,10 @@ p {
   color: white;
 }
 
+.video-container {
+  text-align: center;
+}
+
 /* Mobile (768px and below) */
 @media (max-width: 768px) {
 

@@ -76,6 +76,10 @@ body {
   z-index: 1;
 }
 
+.video-container {
+  text-align: center;
+}
+
 .tips1 {
   max-width: 1100px;
   margin: 80px auto;
